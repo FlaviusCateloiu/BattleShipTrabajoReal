@@ -14,13 +14,13 @@ public class ConfiguracionBarcos extends JPanel{
     private JButton botonTerminar;
     private JButton botonCancelar;
 
-    public ConfiguracionBarcos(Tablero tablero) {
+    public ConfiguracionBarcos(Tablero tablero, BattleShip batalla) {
         this.tablero = tablero;
         this.maxBarcos = 5;
         setLayout(new BorderLayout());
         add(new PrimerPanel(), BorderLayout.NORTH);
         add(new SegundoPanel(), BorderLayout.CENTER);
-        add(new TercerPanel(), BorderLayout.SOUTH);
+        add(new TercerPanel(batalla), BorderLayout.SOUTH);
     }
     private class PrimerPanel extends JPanel {
         public PrimerPanel() {
@@ -73,15 +73,15 @@ public class ConfiguracionBarcos extends JPanel{
         }
     }
     private class TercerPanel extends JPanel {
-        public TercerPanel() {
+        public TercerPanel(BattleShip batalla) {
             botonTerminar = new JButton("Terminar");
             botonTerminar.setEnabled(false);
             botonCancelar = new JButton("Cancelar");
             botonCancelar.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    BattleShip batalla = null;
                     batalla.dispose();
+
                 }
             });
             JPanel panelTerminar = new JPanel();

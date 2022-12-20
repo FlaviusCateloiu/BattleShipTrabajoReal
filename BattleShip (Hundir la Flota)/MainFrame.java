@@ -7,14 +7,11 @@ public class MainFrame extends JFrame {
     private JButton salirDelJuegoButton;
     private JButton reanudarElJuegoButton;
     private JButton empezarElJuegoButton;
+    private JButton empezarElJuegoButton1;
 
     public MainFrame() {
         setContentPane(mainPanel);
         setTitle("BattleShip");
-        setSize(450, 300);
-        setLocationRelativeTo(null);
-        setVisible(true);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
         empezarElJuegoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -27,6 +24,10 @@ public class MainFrame extends JFrame {
                 System.exit(0);
             }
         });
+        setSize(450, 300);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setVisible(true);
     }
     public static void main(String[] args) {
         MainFrame aplicacion = new MainFrame();

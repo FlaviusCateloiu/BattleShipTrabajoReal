@@ -5,10 +5,13 @@ public class BattleShip extends JFrame {
     private ConfiguracionBarcos crearBarcos;
 
     public BattleShip() {
-        setSize(850, 850);
+
         tablero1 = new Tablero();
-        crearBarcos = new ConfiguracionBarcos(tablero1);
+        crearBarcos = new ConfiguracionBarcos(tablero1, this);
         add(crearBarcos);
+        setLocationRelativeTo(null);
+        setSize(850, 850);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setVisible(true);
     }
 }
