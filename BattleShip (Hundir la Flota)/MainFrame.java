@@ -6,23 +6,24 @@ public class MainFrame extends JFrame {
     private JPanel mainPanel;
     private JButton salirDelJuegoButton;
     private JButton reanudarElJuegoButton;
+    private JButton colocarBarcosButton;
     private JButton empezarElJuegoButton;
-    private JButton empezarElJuegoButton1;
 
     public MainFrame() {
         setContentPane(mainPanel);
         setTitle("BattleShip");
-        empezarElJuegoButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                BattleShip batalla = new BattleShip();
-            }
+        colocarBarcosButton.addActionListener(a -> {
+            //Tengo que crear un GUI con los datos necesarios para introducir los barcos en un mapa.
+            IntroducirBarcosPlayer introducirBarcos = new IntroducirBarcosPlayer();
         });
-        salirDelJuegoButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);
-            }
+        empezarElJuegoButton.addActionListener(a -> {
+            //Tener que completar.
+        });
+        salirDelJuegoButton.addActionListener(a -> {
+            System.exit(0);
+        });
+        reanudarElJuegoButton.addActionListener(a -> {
+            //Tener que completar.
         });
         setSize(450, 300);
         setLocationRelativeTo(null);

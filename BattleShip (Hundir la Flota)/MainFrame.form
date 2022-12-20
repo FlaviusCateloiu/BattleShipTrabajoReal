@@ -12,10 +12,15 @@
     <children>
       <component id="7e1f" class="javax.swing.JButton" binding="reanudarElJuegoButton" default-binding="true">
         <constraints>
-          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="50"/>
+            <preferred-size width="150" height="50"/>
+            <maximum-size width="150" height="50"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-6514014"/>
+          <foreground color="-16777216"/>
           <text value="Reanudar el juego"/>
         </properties>
       </component>
@@ -41,10 +46,15 @@
       </vspacer>
       <component id="c9262" class="javax.swing.JButton" binding="salirDelJuegoButton">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="50"/>
+            <preferred-size width="150" height="50"/>
+            <maximum-size width="150" height="50"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-6514014"/>
+          <foreground color="-16777216"/>
           <text value="Salir"/>
         </properties>
       </component>
@@ -58,22 +68,32 @@
           <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="b986e" class="javax.swing.JButton" binding="empezarElJuegoButton" default-binding="true">
+      <component id="b986e" class="javax.swing.JButton" binding="colocarBarcosButton">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="50"/>
+            <preferred-size width="150" height="50"/>
+            <maximum-size width="200" height="50"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-6514014"/>
+          <foreground color="-16777216"/>
           <text value="Colocar Barcos"/>
         </properties>
       </component>
-      <component id="e9cc2" class="javax.swing.JButton" binding="empezarElJuegoButton1" default-binding="true">
+      <component id="e9cc2" class="javax.swing.JButton" binding="empezarElJuegoButton">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="50"/>
+            <preferred-size width="150" height="50"/>
+            <maximum-size width="150" height="50"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-6514014"/>
           <enabled value="false"/>
+          <foreground color="-16777216"/>
           <text value="Empezar el juego"/>
         </properties>
       </component>
